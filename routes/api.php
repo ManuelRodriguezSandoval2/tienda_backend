@@ -18,6 +18,7 @@ use App\Http\Controllers\ProductController;
 Route::get('/obtener_producto_categoria', [CategoryController::class, 'obtenerProductoCategoria']);
 Route::get('/obtener_producto', [ProductController::class, 'obtenerProducto']);
 Route::get('/obtener_producto_nombre', [ProductController::class, 'obtenerProductoNombre']);
+Route::get('/obtener_lista_productos', [ProductController::class, 'obtenerListaProductos']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
